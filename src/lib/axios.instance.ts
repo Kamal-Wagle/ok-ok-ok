@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const $axios = axios.create({
-  baseURL: "https://school-demo-ok.vercel.app"
+  baseURL: "https://suryaprakashschool.vercel.app"
   // timeout: 5000,
 });
 
