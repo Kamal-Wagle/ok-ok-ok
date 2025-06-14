@@ -21,6 +21,10 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: "User already exists" }, { status: 400 });
         }
 
+
+
+        // after complete demo version thene add a middleware for check if this add by admin or not 
+
         // Hash the password
         const salt = await bcryptjs.genSalt(10);
         const hashedPassword = await bcryptjs.hash(password, salt);
